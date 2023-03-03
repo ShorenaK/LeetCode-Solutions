@@ -40,3 +40,34 @@ var isPalindrome = function(x) {
     // If the reverse of the number is equal to the original number, it's a palindrome
     return reverse === x;
 };
+
+
+// third way 
+var isPalindrome = function (x){
+if (x < 0) return false
+let reverse = 0 
+for (let i = x; i >=1 ; i = Math.floor(i/10))
+reverse = reverse* 10 + i%10
+return reverse === x
+}
+
+
+
+var isPalindrome = function(x) {
+    // Base condition
+    if (x < 0) {
+        return false;
+    }
+    // Store the number in a variable
+    let number = x;
+    // This will store the reverse of the number
+    let reverse = 0;
+    while (number > 0) {
+        reverse = reverse * 10 + number % 10;
+        // this is equivalent to useing "Math.floor(number/10)"
+        number = parseInt(number / 10);
+    }
+    return x === reverse;
+};
+
+
