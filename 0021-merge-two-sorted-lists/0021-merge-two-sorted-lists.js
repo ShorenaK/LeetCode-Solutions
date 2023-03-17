@@ -12,7 +12,7 @@
  */
 
 var mergeTwoLists = function(list1, list2) {
-    let dummy = new ListNode()
+    let dummy = new ListNode(-Infinity)
     let prev = dummy 
     while (list1 && list2){
         if(list1.val <= list2.val){
