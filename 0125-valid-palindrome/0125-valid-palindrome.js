@@ -20,7 +20,7 @@
 
 // 1) clean string 
 // 2) lowercase string.toLowerCase()
-// 3) check if palimdrome
+// 3) check if palindrome
 
 const check = (s) =>{
     let l = 0 
