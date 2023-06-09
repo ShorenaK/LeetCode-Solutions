@@ -5,19 +5,6 @@
  */
 
 
-// var twoSum = function(nums, target) {
-//     for (let i = 0; i < nums.length; i ++){
-//         for (let j = i +1 ; j < nums.length; j ++){
-//             sum = nums[i] + nums[j]
-//             if (sum === target){
-//                 return [i, j]
-//             }
-//         }
-//     }
-// };
-
-
-
 function twoSum(nums, target) {
   // Create an empty object to store the numbers in the array and their indices
   const hash = {};
