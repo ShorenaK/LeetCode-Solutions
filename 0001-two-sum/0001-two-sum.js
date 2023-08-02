@@ -3,8 +3,6 @@
  * @param {number} target
  * @return {number[]}
  */
-
-
 function twoSum(nums, target) {
   // Create an empty object to store the numbers in the array and their indices
   const hash = {};
